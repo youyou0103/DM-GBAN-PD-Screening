@@ -1,9 +1,7 @@
 Molecular docking overview:
-
 The project includes MAOB-oriented molecular docking validation for representative screened candidates.
 
 The docking workflow includes:
-
 receptor structure preparation
 binding pocket definition
 redocking validation using a co-crystal ligand
