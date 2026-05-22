@@ -1,0 +1,12 @@
+Completed experimental scope:
+
+BindingDB random split benchmark
+BindingDB cold-drug benchmark
+BindingDB scaffold benchmark
+PD downstream validation
+baseline comparison with representative models
+ablation studies on fusion-related variants
+sensitivity analysis on training configurations
+imbalance-learning strategy analysis
+external virtual screening on MAOB-related candidates
+molecular docking validation and pose visualization

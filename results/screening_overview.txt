@@ -1,0 +1,15 @@
+External screening overview:
+
+The project further extends the benchmark model to an external candidate screening scenario.
+
+The screening workflow includes:
+
+external candidate library preparation
+candidate standardization and cleaning
+model-based scoring and ranking
+similarity analysis against known actives
+scaffold deduplication
+diversity-based selection
+representative candidate prioritization
+
+Detailed candidate lists and ranking results are not publicly released at the current stage.

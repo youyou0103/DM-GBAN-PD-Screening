@@ -1,0 +1,20 @@
+Benchmark overview:
+
+This project includes multi-setting evaluation for drug–target interaction prediction.
+
+Covered evaluation settings:
+
+random split
+cold-drug split
+scaffold split
+PD-specific downstream setting
+
+Covered experimental dimensions:
+
+main benchmark evaluation
+baseline comparison
+ablation study
+sensitivity analysis
+training strategy analysis
+
+Detailed numerical results are not publicly released at the current stage.
