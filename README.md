@@ -2,7 +2,7 @@ DM-GBAN-PD-Screening
 
 
 
-A lightweight project page for Parkinson’s disease drug screening based on drug–target interaction prediction, virtual screening, and molecular docking validation.
+A lightweight project page for Parkinson’s disease drug screening based on drug–target interaction prediction, external virtual screening, and molecular docking validation.
 
 
 
@@ -10,15 +10,23 @@ Overview
 
 
 
-This project presents my ongoing research on deep learning based Parkinson’s disease drug screening.
+This repository presents my ongoing research on deep learning based Parkinson’s disease drug screening.
 
 
 
-The overall pipeline includes:
+The project is organized as a complete workflow including:
 
 
 
 drug–target interaction prediction
+
+benchmark evaluation under multiple split settings
+
+baseline comparison
+
+ablation study
+
+sensitivity analysis
 
 external candidate virtual screening
 
@@ -28,33 +36,23 @@ molecular docking validation on MAOB
 
 result visualization and interpretation
 
-Project Motivation
+Research Scope
 
 
 
-The goal of this project is to identify potential candidate compounds for Parkinson’s disease related targets, with a focus on MAOB-oriented screening and validation.
+This project focuses on PD-oriented candidate discovery with an emphasis on:
 
 
 
-Technical Route
+generalization across different evaluation settings
 
+robustness under new scaffold scenarios
 
+multimodal representation learning for drug-target prediction
 
-The project is organized as the following pipeline:
+downstream validation through candidate screening and docking
 
-
-
-Build a drug–target prediction framework based on molecular graph and protein sequence information
-
-Use the trained model to score external candidate compounds
-
-Perform similarity analysis, scaffold deduplication, and diversity-based filtering
-
-Select representative candidates for molecular docking
-
-Validate structural binding rationality using docking and visualize the binding poses
-
-My Contributions
+Technical Contributions
 
 
 
@@ -62,19 +60,55 @@ My work in this project mainly includes:
 
 
 
-constructing a DTA prediction framework for PD-oriented drug screening
+constructing a PD-oriented drug–target prediction framework based on molecular graph and protein sequence information
 
 introducing Graph Transformer and Dual-Mask BAN based ideas for multimodal feature fusion
 
-completing external virtual screening on MAOB-related candidate compounds
+organizing benchmark experiments under random, cold-drug, scaffold, and PD-specific settings
 
-performing similarity analysis, scaffold filtering, and diversity-based selection
+conducting baseline comparison with representative DTI / DTA models
 
-completing molecular docking and visualization for representative MAOB candidates
+performing ablation studies for fusion architecture variants
 
-organizing the full workflow into a reproducible research pipeline
+carrying out sensitivity analysis and imbalance-learning strategy analysis
+
+building an external virtual screening pipeline for MAOB-related candidate selection
+
+completing molecular docking validation and pose visualization for representative candidates
+
+Benchmark and Validation Coverage
+
+
+
+The current project includes:
+
+
+
+BindingDB random split benchmark
+
+BindingDB cold-drug benchmark
+
+BindingDB scaffold benchmark
+
+PD downstream validation
+
+baseline comparison
+
+ablation studies
+
+sensitivity analysis
+
+external screening
+
+molecular docking validation
 
 Tools and Environment
+
+
+
+The project involves the following tools and frameworks:
+
+
 
 Python
 
@@ -88,19 +122,51 @@ AutoDock Vina
 
 PyMOL
 
+YAML-based configuration and experiment management
+
+Repository Structure
+
+README.md: project overview and research scope
+
+results/experiment\_scope.txt: summary of completed experimental coverage
+
+results/benchmark\_overview.txt: overview of benchmark and evaluation settings
+
+results/screening\_overview.txt: overview of external virtual screening workflow
+
+results/docking\_overview.txt: overview of molecular docking workflow
+
+figures/README.txt: placeholder description for figures and diagrams
+
+Public Release Scope
+
+
+
+This repository is intended as a research project page rather than a full public code release.
+
+
+
+At the current stage, this repository mainly provides:
+
+
+
+project overview
+
+technical scope
+
+experimental coverage
+
+workflow summary
+
+
+
+Core implementation details, full experimental scripts, and detailed result tables will be released after paper publication when appropriate.
+
+
+
 Current Status
 
 
 
-This project is currently under preparation for SCI submission.
-
-
-
-Note
-
-
-
-This repository is a lightweight project page for research presentation.
-
-Core implementation details and full experimental contents will be released after paper publication.
+This work is currently under preparation for SCI submission.
 
